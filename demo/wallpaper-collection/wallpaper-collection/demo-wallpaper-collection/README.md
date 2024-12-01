@@ -32,6 +32,23 @@ dpkg-buildpackage -b -uc -us -tc -j$(nproc)
 ## Sample Command
 
 
+### sample 0
+
+* dh-make / [create-new-project](https://github.com/samwhelp/demo-create-debian-package/blob/main/sample/dh-make/create-new-project/create.sh)
+
+run to install [dh-make](https://packages.debian.org/stable/dh-make)
+
+``` sh
+sudo apt-get install dh-make
+```
+
+run to create new project
+
+``` sh
+dh_make -s -c gpl -p demo-wallpaper-collection_0.1.1 --createorig -n -y
+```
+
+
 ###  sample 1
 
 > run to change log
